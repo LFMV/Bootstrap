@@ -393,15 +393,131 @@
     <section class="seccion">
         <h1 class="text-center my-5 heading">Modals</h1>
 
+        <div class="container-xl">
+            <Button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Ver formulario</Button>
+
+            <!--Modal-->
+            <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <!-- Content -->
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                            <h2 class="modal-title">Nuevo cliente</h2>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-close"></button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                            <form>
+                                <legend>Nuevo Cliente</legend>
+                                <div class="mb-3">
+                                    <!-- for y id sirve para si tocas el nombre habilita el campo del formulario-->
+                                    <label for="nombre" form-label>Nombre</label>
+                                    <input id="nombre" type="text" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- for y id sirve para si tocas el nombre habilita el campo del formulario-->
+                                    <label for="empresa" form-label>Empresa</label>
+                                    <input id="empresa" type="text" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <!-- for y id sirve para si tocas el nombre habilita el campo del formulario-->
+                                    <label for="email" form-label>Email</label>
+                                    <input id="email" type="email" class="form-control">
+                                </div>
+        
+                                
+
+                            </form>
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-plus-circle-fill"></i>
+                                Guardar</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-danger">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="seccion">
         <h1 class="text-center my-5 heading">Navs</h1>
    
+        <div class="container-xl">
+            <ul class="nav flex-column flex-md-row justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Empresa</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Historia</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Clientes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda Virtual</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Categoria</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Ofertas</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Productos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                
+            </ul>
+        </div>
     </section>
     
     <section class="seccion">
         <h1 class="text-center my-5 heading">Off Canvas</h1>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            Administrar Perfil
+        </button>
+
+        <div id="menu" class="offcanvas offcanvas-start">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Navegacion</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3>Administracion</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">tarjetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">notificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </section>
 
